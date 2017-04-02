@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+    
+    <entry>
+      <title><![CDATA[从use strict看JS（一）：this与箭头函数]]></title>
+      <url>%2Fsee-js-from-use-strict-this-and-arrow-function%2F</url>
+      <content type="text"><![CDATA[系列一日，见“use strict”，冥想许久…… 这是这个系列第一篇文章，后几篇还没写出来。 use strictuse strict指js的严格模式，还没了解的看这里：Javascript 严格模式详解 use strict有3点比较重要 函数调用this为undefined arguments。不允许对arguments赋值。禁止使用arguments.callee。arguments不再追踪参数的变化 不用var声明不会提升成全局变量，而是报错 use strict还有一些常人不易写错的，不纳入写作范围： 对象不能有重名的属性,函数不能有重名的参数 规定保留字。class, implements 回归正题，什么是函数调用？为何严格模式函数调用要将this指向undefined？ this调用的四种模式首先牢记：js function有四种方式调用，每一种的this都不同。 方法调用当函数被保存为对象的属性时，我们称这个函数为方法。方法调用的this就绑定到该对象 var dog={ name:&quot;doge&quot;, sayName:function(){ console.log(this.name); } } //输出doge，this绑定到了dog dog.sayName(); 函数调用声明一个function然后调用。非严格模式this指向window，严格模式是undefined function sayName(){ console.log(this); } function sayNameStrict(){ &quot;use strict&quot;; console.log(this); } //指向window sayName(); //开启严格模式，指向undefined sayNameStrict(); 构造函数调用这在对象、对象继承用的比较多，通过new来使用，this指向new出来的新对象。后面会有文章讲解new如何实现，到时候就会很清楚。 function Dog(name){ this.name=name; } var dog=new Dog(&quot;doge&quot;); //this指向dog console.log(dog.name); apply &amp; call &amp; bind这类就是改变this，apply和call是很重要的，所以许多面试都会问，之后的文章我们会看到它们的强大作用。 问题：当对象的方法返回了函数？那就是函数调用了。这是js的一个设计错误，this应该绑定到外部函数的this变量，这个错误即是“函数调用”this绑定的错误。严格模式规定，this不指向window了，但并没有解决这个问题，于是箭头函数来了。 var dog={ name:&quot;doge&quot;, sayName:function(){ return function(){ console.log(this); } } } // 此时是函数调用，this指向window dog.sayName()(); 箭头函数对this的改变箭头函数怎么解决这个问题呢？其实用了闭包，改成下面这样，babel啥的也是这样做的。 var dog = { name: &quot;doge&quot;, sayName: function sayName() { var _this = this; return function () { console.log(_this); }; } }; 那如果嵌套了多层箭头函数？对闭包来说是一样的 var dog={ name:&quot;doge&quot;, sayName:function(){ return ()=&gt;{ return ()=&gt;{ console.log(this); } } } } 相当于 var dog = { name: &quot;doge&quot;, sayName: function sayName() { var _this = this; return function () { return function () { console.log(_this); }; }; } }; 那如果函数的属性就是箭头函数？没有这样用的！你会拿到window var dog={ name:&quot;doge&quot;, sayName:()=&gt;{ console.log(this); } } // this指向window，因为箭头函数 dog.sayName(); the good parts 这是一本书，文末有链接。 the good parts说过：js语言有些地方设计得不好，于是后来的标准不断地补坑。the good parts又说过：js 函数调用this绑定到window是一个设计错误 等等，严格模式函数调用this为何指向undefined？？ 首先，不该指向window，所以换一个。 其次，指向undefined有一个好处，构造函数一般不要直接运行，那要是强行运行呢？this指向window会给window添加许多属性，有扰乱命名空间之嫌，指向undefined之后，你强行运行我就强行报错！ function Dog(name){ this.name=name; } //会给window增加name属性，改成严格模式就会TypeError Dog(&quot;doge&quot;); 当然，use strict不能解决所有问题，所以有了箭头函数 参考Javascript 严格模式详解the good parts]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[about-es]]></title>
+      <url>%2Fabout-es%2F</url>
+      <content type="text"><![CDATA[常说的ES6是啥？js在1995 年Netscape 首发，1996 年转化成标准，即ECMAScript，简称ES。 2009年12月，ES5发布。2015 年，负责制定 ECMAScript 规范草案的委员会决定一年定一次标准，哈哈~ ECMAScript第六版即ES6在2015.06发布，又称ES2015，照这样说，ES2016应该是ES7，而今年2017就应该是ES8。有道理！ 但实际中大家常说的是ES6，因为ES7改变并不大，而ES6相比于ES5改动就大了。 详见ECMAScript 6简介]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[markdown]]></title>
+      <url>%2Fmarkdown%2F</url>
+      <content type="text"><![CDATA[链接和图片[clay](https://reclay.github.io) ![clay](https://reclay.github.io/avator.jpg) 标题# 一级标题 ## 二级标题 列表无序- 文本1 - 文本2 有序1. 文本1 2. 文本2 引用&gt; 引用1 代码四个空格 表格| 标题1 | 标题2 | 标题3 | |------ | :-----: | ----: | | 默认左对齐 | 居中 | 右对齐 | | 占位占位占位占位 | 占位占位占位占位占位 | 占位占位占位占位占位 | 效果如下： 标题1 标题2 标题3 默认左对齐 居中 右对齐 占位占位占位占位 占位占位占位占位占位 占位占位占位占位占位]]></content>
+    </entry>
+
+    
+  
+  
+</search>

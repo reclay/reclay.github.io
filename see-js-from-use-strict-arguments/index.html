@@ -87,32 +87,32 @@
 
 
 
-<meta name="description" content="use strict 的 arguments上一篇说到，use strict对arguments做了以下限定
+<meta name="description" content="系列系列列表：从use strict看JS（一）：this与箭头函数从use strict看JS（二）：函数传参模式与arguments
+use strict 的 arguments上一篇说到，use strict对arguments做了以下限定
 
 arguments。不允许对arguments赋值。禁止使用arguments.callee。arguments不再追踪参数的变化
 
-这是为什么呢？如果你明白下面两个例子就不用看这篇文章了~
-arguments传的是“值”function notChangeName(obj){">
+这是为什么呢？如">
 <meta property="og:type" content="article">
 <meta property="og:title" content="从use strict看JS（二）：函数传参模式与arguments">
 <meta property="og:url" content="https://reclay.github.io/see-js-from-use-strict-arguments/index.html">
 <meta property="og:site_name" content="clay">
-<meta property="og:description" content="use strict 的 arguments上一篇说到，use strict对arguments做了以下限定
+<meta property="og:description" content="系列系列列表：从use strict看JS（一）：this与箭头函数从use strict看JS（二）：函数传参模式与arguments
+use strict 的 arguments上一篇说到，use strict对arguments做了以下限定
 
 arguments。不允许对arguments赋值。禁止使用arguments.callee。arguments不再追踪参数的变化
 
-这是为什么呢？如果你明白下面两个例子就不用看这篇文章了~
-arguments传的是“值”function notChangeName(obj){">
+这是为什么呢？如">
 <meta property="og:image" content="https://reclay.github.io/images/arguments-0412.jpg">
-<meta property="og:updated_time" content="2017-04-12T14:54:33.130Z">
+<meta property="og:updated_time" content="2017-04-12T15:00:58.399Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="从use strict看JS（二）：函数传参模式与arguments">
-<meta name="twitter:description" content="use strict 的 arguments上一篇说到，use strict对arguments做了以下限定
+<meta name="twitter:description" content="系列系列列表：从use strict看JS（一）：this与箭头函数从use strict看JS（二）：函数传参模式与arguments
+use strict 的 arguments上一篇说到，use strict对arguments做了以下限定
 
 arguments。不允许对arguments赋值。禁止使用arguments.callee。arguments不再追踪参数的变化
 
-这是为什么呢？如果你明白下面两个例子就不用看这篇文章了~
-arguments传的是“值”function notChangeName(obj){">
+这是为什么呢？如">
 <meta name="twitter:image" content="https://reclay.github.io/images/arguments-0412.jpg">
 
 
@@ -385,7 +385,7 @@ arguments传的是“值”function notChangeName(obj){">
                     <span class="post-meta-item-text">字数统计</span>
                   
                     <span title="字数统计" }}">
-                      1,111字
+                      1,141字
                     </span>
               
 
@@ -421,7 +421,8 @@ arguments传的是“值”function notChangeName(obj){">
       
 
       
-        <h2 id="use-strict-的-arguments"><a href="#use-strict-的-arguments" class="headerlink" title="use strict 的 arguments"></a>use strict 的 arguments</h2><p>上一篇说到，use strict对arguments做了以下限定</p>
+        <h2 id="系列"><a href="#系列" class="headerlink" title="系列"></a>系列</h2><p>系列列表：<br><a href="https://reclay.github.io/see-js-from-use-strict-this-and-arrow-function/">从use strict看JS（一）：this与箭头函数</a><br><a href="https://reclay.github.io/see-js-from-use-strict-arguments/">从use strict看JS（二）：函数传参模式与arguments</a></p>
+<h2 id="use-strict-的-arguments"><a href="#use-strict-的-arguments" class="headerlink" title="use strict 的 arguments"></a>use strict 的 arguments</h2><p>上一篇说到，use strict对arguments做了以下限定</p>
 <blockquote>
 <p>arguments。不允许对arguments赋值。禁止使用arguments.callee。arguments不再追踪参数的变化</p>
 </blockquote>
@@ -771,7 +772,7 @@ argToArr(1);
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#use-strict-的-arguments"><span class="nav-number">1.</span> <span class="nav-text">use strict 的 arguments</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#arguments传的是“值”"><span class="nav-number">1.1.</span> <span class="nav-text">arguments传的是“值”</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#严格模式下arguments会保持对同一“值”的引用"><span class="nav-number">1.2.</span> <span class="nav-text">严格模式下arguments会保持对同一“值”的引用</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#arguments-amp-js的变量、值、类型"><span class="nav-number">2.</span> <span class="nav-text">arguments & js的变量、值、类型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#js的变量、值、类型"><span class="nav-number">2.1.</span> <span class="nav-text">js的变量、值、类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#arguments传的是值"><span class="nav-number">2.2.</span> <span class="nav-text">arguments传的是值</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#面试会考：arguments不是数组"><span class="nav-number">3.</span> <span class="nav-text">面试会考：arguments不是数组</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#最后谈谈arguments-callee"><span class="nav-number">4.</span> <span class="nav-text">最后谈谈arguments.callee</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#等等"><span class="nav-number">5.</span> <span class="nav-text">等等</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#系列"><span class="nav-number">1.</span> <span class="nav-text">系列</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#use-strict-的-arguments"><span class="nav-number">2.</span> <span class="nav-text">use strict 的 arguments</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#arguments传的是“值”"><span class="nav-number">2.1.</span> <span class="nav-text">arguments传的是“值”</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#严格模式下arguments会保持对同一“值”的引用"><span class="nav-number">2.2.</span> <span class="nav-text">严格模式下arguments会保持对同一“值”的引用</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#arguments-amp-js的变量、值、类型"><span class="nav-number">3.</span> <span class="nav-text">arguments & js的变量、值、类型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#js的变量、值、类型"><span class="nav-number">3.1.</span> <span class="nav-text">js的变量、值、类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#arguments传的是值"><span class="nav-number">3.2.</span> <span class="nav-text">arguments传的是值</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#面试会考：arguments不是数组"><span class="nav-number">4.</span> <span class="nav-text">面试会考：arguments不是数组</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#最后谈谈arguments-callee"><span class="nav-number">5.</span> <span class="nav-text">最后谈谈arguments.callee</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#等等"><span class="nav-number">6.</span> <span class="nav-text">等等</span></a></li></ol></div>
             
 
           </div>

@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="node," />
+  <meta name="keywords" content="css," />
 
 
 
@@ -87,47 +87,25 @@
 
 
 
-<meta name="description" content="乱码index.js  
-const shell = require(&amp;apos;shelljs&amp;apos;);
-
-shell.exec(&amp;apos;aaa&amp;apos;, function (code, stdout, stderr) {
-});
-执行 node index 出现乱码  
-
-先执行chcp 65001即可
-
-路径在当前目录执行不能加./(powershell下执行需要加)，下面这个">
+<meta name="description" content="css 作用域是全局的，项目越来越大，人越来越多，命名慢慢成为问题，以下是几种解决命名问题的方案
+一. BEM以 .block__element–modifier 形式命名，命名有含义，block 可视为模块，有一定作用域含义
+实例.dropdown-menu__item–active
+二. scoped css参考：https://vue-loader.vuejs.org/zh/guide/sc">
 <meta property="og:type" content="article">
-<meta property="og:title" content="node 执行 bat 命令：乱码、路径问题">
-<meta property="og:url" content="https://reclay.github.io/node-messy-code/index.html">
+<meta property="og:title" content="organize-css">
+<meta property="og:url" content="https://reclay.github.io/organize-css/index.html">
 <meta property="og:site_name" content="clay">
-<meta property="og:description" content="乱码index.js  
-const shell = require(&amp;apos;shelljs&amp;apos;);
-
-shell.exec(&amp;apos;aaa&amp;apos;, function (code, stdout, stderr) {
-});
-执行 node index 出现乱码  
-
-先执行chcp 65001即可
-
-路径在当前目录执行不能加./(powershell下执行需要加)，下面这个">
-<meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/5/24/163924296a231e49?w=334&h=52&f=png&s=4210">
-<meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/5/24/16392447c1f45729?w=469&h=99&f=png&s=7194">
-<meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/5/24/1639246787b6a1f7?w=427&h=79&f=png&s=6041">
-<meta property="og:updated_time" content="2019-02-24T12:30:08.870Z">
+<meta property="og:description" content="css 作用域是全局的，项目越来越大，人越来越多，命名慢慢成为问题，以下是几种解决命名问题的方案
+一. BEM以 .block__element–modifier 形式命名，命名有含义，block 可视为模块，有一定作用域含义
+实例.dropdown-menu__item–active
+二. scoped css参考：https://vue-loader.vuejs.org/zh/guide/sc">
+<meta property="og:updated_time" content="2019-02-24T12:52:51.689Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="node 执行 bat 命令：乱码、路径问题">
-<meta name="twitter:description" content="乱码index.js  
-const shell = require(&amp;apos;shelljs&amp;apos;);
-
-shell.exec(&amp;apos;aaa&amp;apos;, function (code, stdout, stderr) {
-});
-执行 node index 出现乱码  
-
-先执行chcp 65001即可
-
-路径在当前目录执行不能加./(powershell下执行需要加)，下面这个">
-<meta name="twitter:image" content="https://user-gold-cdn.xitu.io/2018/5/24/163924296a231e49?w=334&h=52&f=png&s=4210">
+<meta name="twitter:title" content="organize-css">
+<meta name="twitter:description" content="css 作用域是全局的，项目越来越大，人越来越多，命名慢慢成为问题，以下是几种解决命名问题的方案
+一. BEM以 .block__element–modifier 形式命名，命名有含义，block 可视为模块，有一定作用域含义
+实例.dropdown-menu__item–active
+二. scoped css参考：https://vue-loader.vuejs.org/zh/guide/sc">
 
 
 
@@ -155,13 +133,13 @@ shell.exec(&amp;apos;aaa&amp;apos;, function (code, stdout, stderr) {
 
 
 
-  <link rel="canonical" href="https://reclay.github.io/node-messy-code/"/>
+  <link rel="canonical" href="https://reclay.github.io/organize-css/"/>
 
 
 
 
 
-  <title> node 执行 bat 命令：乱码、路径问题 | clay </title>
+  <title> organize-css | clay </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -322,7 +300,7 @@ shell.exec(&amp;apos;aaa&amp;apos;, function (code, stdout, stderr) {
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="https://reclay.github.io/node-messy-code/">
+    <link itemprop="mainEntityOfPage" href="https://reclay.github.io/organize-css/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="clay">
@@ -343,7 +321,7 @@ shell.exec(&amp;apos;aaa&amp;apos;, function (code, stdout, stderr) {
             
             
               
-                node 执行 bat 命令：乱码、路径问题
+                organize-css
               
             
           </h2>
@@ -358,8 +336,8 @@ shell.exec(&amp;apos;aaa&amp;apos;, function (code, stdout, stderr) {
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-24T21:22:06+08:00">
-                2018-05-24
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-12-18T16:29:03+08:00">
+                2019-12-18
               </time>
             
 
@@ -377,8 +355,8 @@ shell.exec(&amp;apos;aaa&amp;apos;, function (code, stdout, stderr) {
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/node-messy-code/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="node-messy-code/" itemprop="commentCount"></span>
+                <a href="/organize-css/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="organize-css/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -399,7 +377,7 @@ shell.exec(&amp;apos;aaa&amp;apos;, function (code, stdout, stderr) {
                     <span class="post-meta-item-text">字数统计</span>
                   
                     <span title="字数统计" }}">
-                      92字
+                      486字
                     </span>
               
 
@@ -415,7 +393,7 @@ shell.exec(&amp;apos;aaa&amp;apos;, function (code, stdout, stderr) {
                     <span class="post-meta-item-text">阅读时长</span>
                   
                     <span title="阅读时长" }}">
-                      1分钟
+                      2分钟
                     </span>
 
               
@@ -435,20 +413,28 @@ shell.exec(&amp;apos;aaa&amp;apos;, function (code, stdout, stderr) {
       
 
       
-        <h3 id="乱码"><a href="#乱码" class="headerlink" title="乱码"></a>乱码</h3><p>index.js  </p>
-<pre><code>const shell = require(&apos;shelljs&apos;);
-
-shell.exec(&apos;aaa&apos;, function (code, stdout, stderr) {
-});
-</code></pre><p>执行 node index 出现乱码  </p>
-<p><img src="https://user-gold-cdn.xitu.io/2018/5/24/163924296a231e49?w=334&amp;h=52&amp;f=png&amp;s=4210" alt=""></p>
-<p>先执行<code>chcp 65001</code>即可</p>
-<p><img src="https://user-gold-cdn.xitu.io/2018/5/24/16392447c1f45729?w=469&amp;h=99&amp;f=png&amp;s=7194" alt=""></p>
-<h3 id="路径"><a href="#路径" class="headerlink" title="路径"></a>路径</h3><p>在当前目录执行不能加<code>./</code>(powershell下执行需要加)，下面这个会报错  </p>
-<pre><code>shell.exec(&apos;./test&apos;, function (code, stdout, stderr) {
-});
-</code></pre><p><img src="https://user-gold-cdn.xitu.io/2018/5/24/1639246787b6a1f7?w=427&amp;h=79&amp;f=png&amp;s=6041" alt=""></p>
-<p>这个报错似乎很友好，但和乱码同时出现就很懵了。纪念我的半个下午</p>
+        <p>css 作用域是全局的，项目越来越大，人越来越多，命名慢慢成为问题，以下是几种解决命名问题的方案</p>
+<h2 id="一-BEM"><a href="#一-BEM" class="headerlink" title="一. BEM"></a>一. BEM</h2><p>以 .block__element–modifier 形式命名，命名有含义，block 可视为模块，有一定作用域含义</p>
+<h3 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h3><p>.dropdown-menu__item–active</p>
+<h2 id="二-scoped-css"><a href="#二-scoped-css" class="headerlink" title="二. scoped css"></a>二. scoped css</h2><p>参考：<a href="https://vue-loader.vuejs.org/zh/guide/scoped-css.html" target="_blank" rel="external">https://vue-loader.vuejs.org/zh/guide/scoped-css.html</a>  </p>
+<p>目标：当前组件样式不会影响其它组件  </p>
+<p>给组件的 dom 节点添加惟一属性，并转换 style 标签中的 css 匹配该属性，使得 css 作用域有限  </p>
+<h3 id="实例-1"><a href="#实例-1" class="headerlink" title="实例"></a>实例</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">scoped</span>&gt;</span><span class="undefined"></span></div><div class="line">.example &#123;</div><div class="line">  color: red;</div><div class="line">&#125;</div><div class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"example"</span>&gt;</span>hi<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>转换结果：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></div><div class="line">.example[data-v-f3f3eg9] &#123;</div><div class="line">  color: red;</div><div class="line">&#125;</div><div class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"example"</span> <span class="attr">data-v-f3f3eg9</span>&gt;</span>hi<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<h2 id="三-css-modules"><a href="#三-css-modules" class="headerlink" title="三. css modules"></a>三. css modules</h2><p>参考：<a href="https://vue-loader.vuejs.org/zh/guide/css-modules.html" target="_blank" rel="external">https://vue-loader.vuejs.org/zh/guide/css-modules.html</a>  </p>
+<p>将 css 的选择器转换成惟一的字符串，运用到 dom。是在用算法命名，记录了人的命名到算法命名的 map 表  </p>
+<h3 id="实例-2"><a href="#实例-2" class="headerlink" title="实例"></a>实例</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">module</span>&gt;</span><span class="undefined"></span></div><div class="line">.red &#123;</div><div class="line">  color: red;</div><div class="line">&#125;</div><div class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">p</span> <span class="attr">:class</span>=<span class="string">"$style.red"</span>&gt;</span></div><div class="line">    This should be red</div><div class="line">  <span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>转换结果：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">module</span>&gt;</span><span class="undefined"></span></div><div class="line">._1yZGjg0pYkMbaHPr4wT6P__1 &#123;</div><div class="line">  color: red;</div><div class="line">&#125;</div><div class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"_1yZGjg0pYkMbaHPr4wT6P__1"</span>&gt;</span></div><div class="line">    This should be red</div><div class="line">  <span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<h2 id="四-css-in-js"><a href="#四-css-in-js" class="headerlink" title="四. css-in-js"></a>四. css-in-js</h2><p>参考：<a href="https://github.com/styled-components/vue-styled-components" target="_blank" rel="external">https://github.com/styled-components/vue-styled-components</a>  </p>
+<p>将 css 内容用惟一的选择器表示。同 css modules，用算法命名。将 css 视为 js 的字符串，赋予 css 更多能力  </p>
+<h3 id="实例-3"><a href="#实例-3" class="headerlink" title="实例"></a>实例</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">css-in-js</span>&gt;</span><span class="tag">&lt;/<span class="name">css-in-js</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></div><div class="line">  import styled from 'vue-styled-components';</div><div class="line">  export default &#123;</div><div class="line">    components: &#123;</div><div class="line">      cssInJs: styled.div `</div><div class="line">                color: red;</div><div class="line">            `</div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>转换结果：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"gXTzCp"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></div><div class="line">.gXTzCp &#123;</div><div class="line">    color: red;</div><div class="line">&#125;</div><div class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<h2 id="五-总结"><a href="#五-总结" class="headerlink" title="五. 总结"></a>五. 总结</h2><ol>
+<li>BEM 让命名有规律、有含义，block 可视为模块，有一定作用域含义</li>
+<li>scoped css 限定 css 作用域，无关命名。无法适配多套主题</li>
+<li>css modules 使用算法命名，没有了命名冲突，也限定了 css 作用域。无法适配多套主题</li>
+<li>css-in-js 使用算法命名，拥有 css modules 的优势。同时将 css 视为 js 的字符串，赋予 css 更多能力</li>
+</ol>
 
       
     </div>
@@ -472,7 +458,7 @@ shell.exec(&apos;aaa&apos;, function (code, stdout, stderr) {
       
         <div class="post-tags">
           
-            <a href="/tags/node/" rel="tag"># node</a>
+            <a href="/tags/css/" rel="tag"># css</a>
           
         </div>
       
@@ -485,8 +471,8 @@ shell.exec(&apos;aaa&apos;, function (code, stdout, stderr) {
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/see-js-from-use-strict-arguments/" rel="next" title="从use strict看JS（二）：函数传参模式与arguments">
-                <i class="fa fa-chevron-left"></i> 从use strict看JS（二）：函数传参模式与arguments
+              <a href="/react-native-pits/" rel="next" title="RN 踩坑：杂记">
+                <i class="fa fa-chevron-left"></i> RN 踩坑：杂记
               </a>
             
           </div>
@@ -494,10 +480,6 @@ shell.exec(&apos;aaa&apos;, function (code, stdout, stderr) {
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/crawler-puppeteer/" rel="prev" title="用 puppeteer 获取 jd 商品评论">
-                用 puppeteer 获取 jd 商品评论 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -641,7 +623,7 @@ shell.exec(&apos;aaa&apos;, function (code, stdout, stderr) {
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#乱码"><span class="nav-number">1.</span> <span class="nav-text">乱码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#路径"><span class="nav-number">2.</span> <span class="nav-text">路径</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一-BEM"><span class="nav-number">1.</span> <span class="nav-text">一. BEM</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#实例"><span class="nav-number">1.1.</span> <span class="nav-text">实例</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二-scoped-css"><span class="nav-number">2.</span> <span class="nav-text">二. scoped css</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#实例-1"><span class="nav-number">2.1.</span> <span class="nav-text">实例</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三-css-modules"><span class="nav-number">3.</span> <span class="nav-text">三. css modules</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#实例-2"><span class="nav-number">3.1.</span> <span class="nav-text">实例</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#四-css-in-js"><span class="nav-number">4.</span> <span class="nav-text">四. css-in-js</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#实例-3"><span class="nav-number">4.1.</span> <span class="nav-text">实例</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#五-总结"><span class="nav-number">5.</span> <span class="nav-text">五. 总结</span></a></li></ol></div>
             
 
           </div>
@@ -761,9 +743,9 @@ shell.exec(&apos;aaa&apos;, function (code, stdout, stderr) {
 
     <script type="text/javascript">
       var disqus_shortname = 'reclay';
-      var disqus_identifier = 'node-messy-code/';
+      var disqus_identifier = 'organize-css/';
 
-      var disqus_title = "node 执行 bat 命令：乱码、路径问题";
+      var disqus_title = "organize-css";
 
 
       function run_disqus_script(disqus_script) {

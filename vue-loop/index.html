@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="罗尖, 博客, 前端, 文章, JS, CSS, HTML" />
+  <meta name="keywords" content="js,vue," />
 
 
 
@@ -87,15 +87,36 @@
 
 
 
-<meta name="description" content="前端，分享 JS/CSS/HTML 文章，专注质量。也聊其它爱好，呵呵哒">
-<meta property="og:type" content="website">
-<meta property="og:title" content="clay">
-<meta property="og:url" content="https://reclay.github.io/tags/record/index.html">
+<meta name="description" content="最新填坑：Vue 源码(一)：响应式原理  
+====== 更新线 =====评论区有了相关讨论，贴更详细一点的解释出来====== 更新线 =====循环出现的条件：
+
+key=&amp;quot;Math.random()&amp;quot;
+子组件在 created 中输出计算属性并改变 data
+
+与 Vue watcher 的添加机制有关，初步认为是 Vue 的小 bug，dep 对象的 targetS">
+<meta property="og:type" content="article">
+<meta property="og:title" content="熟悉 Vue ？你能解释这个死循环吗？">
+<meta property="og:url" content="https://reclay.github.io/vue-loop/index.html">
 <meta property="og:site_name" content="clay">
-<meta property="og:description" content="前端，分享 JS/CSS/HTML 文章，专注质量。也聊其它爱好，呵呵哒">
+<meta property="og:description" content="最新填坑：Vue 源码(一)：响应式原理  
+====== 更新线 =====评论区有了相关讨论，贴更详细一点的解释出来====== 更新线 =====循环出现的条件：
+
+key=&amp;quot;Math.random()&amp;quot;
+子组件在 created 中输出计算属性并改变 data
+
+与 Vue watcher 的添加机制有关，初步认为是 Vue 的小 bug，dep 对象的 targetS">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/9/2/1659a6f73f9a26de">
+<meta property="og:updated_time" content="2019-02-24T12:44:13.016Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="clay">
-<meta name="twitter:description" content="前端，分享 JS/CSS/HTML 文章，专注质量。也聊其它爱好，呵呵哒">
+<meta name="twitter:title" content="熟悉 Vue ？你能解释这个死循环吗？">
+<meta name="twitter:description" content="最新填坑：Vue 源码(一)：响应式原理  
+====== 更新线 =====评论区有了相关讨论，贴更详细一点的解释出来====== 更新线 =====循环出现的条件：
+
+key=&amp;quot;Math.random()&amp;quot;
+子组件在 created 中输出计算属性并改变 data
+
+与 Vue watcher 的添加机制有关，初步认为是 Vue 的小 bug，dep 对象的 targetS">
+<meta name="twitter:image" content="https://user-gold-cdn.xitu.io/2018/9/2/1659a6f73f9a26de">
 
 
 
@@ -123,13 +144,13 @@
 
 
 
-  <link rel="canonical" href="https://reclay.github.io/tags/record/"/>
+  <link rel="canonical" href="https://reclay.github.io/vue-loop/"/>
 
 
 
 
 
-  <title> 标签: record | clay </title>
+  <title> 熟悉 Vue ？你能解释这个死循环吗？ | clay </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -154,7 +175,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -280,74 +301,207 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-collapse">
-    <div class="collection-title">
-      <h2 >
-        record
-        <small>标签</small>
-      </h2>
-    </div>
-
+  <div id="posts" class="posts-expand">
     
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/about-es/" itemprop="url">
-              
-                <span itemprop="name">about-es</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-03-02T15:48:05+08:00"
-              content="2017-03-02" >
-          03-02
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-    
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/markdown/" itemprop="url">
-              
-                <span itemprop="name">markdown</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-03-02T15:47:49+08:00"
-              content="2017-03-02" >
-          03-02
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-    
-  </div>
 
   
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://reclay.github.io/vue-loop/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="clay">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avator.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="clay">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+            
+            
+              
+                熟悉 Vue ？你能解释这个死循环吗？
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-01T12:47:09+08:00">
+                2018-09-01
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/vue-loop/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="vue-loop/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                  
+                    <span class="post-meta-item-text">字数统计</span>
+                  
+                    <span title="字数统计" }}">
+                      208字
+                    </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                  
+                    <span class="post-meta-item-text">阅读时长</span>
+                  
+                    <span title="阅读时长" }}">
+                      1分钟
+                    </span>
+
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>最新填坑：<a href="https://juejin.im/post/5c03a7446fb9a049e65ffe99" target="_blank" rel="external">Vue 源码(一)：响应式原理</a>  </p>
+<p>====== 更新线 =====<br>评论区有了相关讨论，贴更详细一点的解释出来<br><img src="https://user-gold-cdn.xitu.io/2018/9/2/1659a6f73f9a26de" alt=""><br>====== 更新线 =====<br>循环出现的条件：</p>
+<ul>
+<li><code>key=&quot;Math.random()&quot;</code></li>
+<li>子组件在 created 中输出计算属性并改变 data</li>
+</ul>
+<p>与 Vue watcher 的添加机制有关，初步认为是 Vue 的小 bug，dep 对象的 targetStack 管理不当导致</p>
+<p>================== 分割线 ===============</p>
+<blockquote>
+<p>把下面的代码拷到你的 html 文件，在浏览器打开你会看到控制台报了死循环的错，知道为什么吗？</p>
+</blockquote>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app"</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">child-comp</span> <span class="attr">v-for</span>=<span class="string">"i in [1]"</span> <span class="attr">:key</span>=<span class="string">"Math.random()"</span> <span class="attr">:sub-prop</span>=<span class="string">"parentData"</span>&gt;</span><span class="tag">&lt;/<span class="name">child-comp</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://cdn.bootcss.com/vue/2.5.16/vue.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">        Vue.component('child-comp', &#123;</div><div class="line">            props: &#123;</div><div class="line">                subProp: &#123;&#125;</div><div class="line">            &#125;,</div><div class="line">            data() &#123;</div><div class="line">                return &#123;</div><div class="line">                    subData: []</div><div class="line">                &#125;;</div><div class="line">            &#125;,</div><div class="line">            template: '<span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span>',</div><div class="line">            computed: &#123;</div><div class="line">                subComputed() &#123;</div><div class="line">                    return '222';</div><div class="line">                &#125;</div><div class="line">            &#125;,</div><div class="line">            created() &#123;</div><div class="line">                console.log(this.subComputed);</div><div class="line">                this.subData.push(1);</div><div class="line">            &#125;</div><div class="line">        &#125;);</div><div class="line">        vm = new Vue(&#123;</div><div class="line">            el: '#app',</div><div class="line">            data() &#123;</div><div class="line">                return &#123;</div><div class="line">                    parentData: 'hello world'</div><div class="line">                &#125;;</div><div class="line">            &#125;</div><div class="line">        &#125;)</div><div class="line">    <span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div></pre></td></tr></table></figure>
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/js/" rel="tag"># js</a>
+          
+            <a href="/tags/vue/" rel="tag"># vue</a>
+          
+        </div>
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/crawler-puppeteer/" rel="next" title="用 puppeteer 获取 jd 商品评论">
+                <i class="fa fa-chevron-left"></i> 用 puppeteer 获取 jd 商品评论
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/vue-d3/" rel="prev" title="用 vue + d3 画一棵树">
+                用 vue + d3 画一棵树 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
           
           </div>
@@ -355,6 +509,17 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
 
 
         </div>
@@ -539,6 +704,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
 
   
 
@@ -555,9 +724,9 @@
 
     <script type="text/javascript">
       var disqus_shortname = 'reclay';
-      var disqus_identifier = 'tags/record/index.html';
+      var disqus_identifier = 'vue-loop/';
 
-      var disqus_title = "";
+      var disqus_title = "熟悉 Vue ？你能解释这个死循环吗？";
 
 
       function run_disqus_script(disqus_script) {
@@ -570,6 +739,13 @@
 
       run_disqus_script('count.js');
 
+      
+        var disqus_config = function () {
+            this.page.url = disqus_url;
+            this.page.identifier = disqus_identifier;
+            this.page.title = disqus_title;
+        };
+        run_disqus_script('embed.js');
       
 
     </script>

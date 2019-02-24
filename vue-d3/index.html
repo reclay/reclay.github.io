@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="node," />
+  <meta name="keywords" content="js,vue,d3," />
 
 
 
@@ -87,47 +87,39 @@
 
 
 
-<meta name="description" content="乱码index.js  
-const shell = require(&amp;apos;shelljs&amp;apos;);
+<meta name="description" content="结果预览github pages
+vue 和 d3 的角色画图可分为两步：
 
-shell.exec(&amp;apos;aaa&amp;apos;, function (code, stdout, stderr) {
-});
-执行 node index 出现乱码  
+元素坐标计算
+数据绑定
 
-先执行chcp 65001即可
-
-路径在当前目录执行不能加./(powershell下执行需要加)，下面这个">
+坐标计算只需要一些 api，本文使用 d3。数据绑定既可以借助 d3，也可以使用 vue。d3 通过操作 dom 实现，有点像 jQuery，d3 针对数据和 dom 的状态提出了三个概念：Update、Enter、Exit，感兴趣的可以看官网。本文使用 vue 做数据绑定  
+总结：使用 d3">
 <meta property="og:type" content="article">
-<meta property="og:title" content="node 执行 bat 命令：乱码、路径问题">
-<meta property="og:url" content="https://reclay.github.io/node-messy-code/index.html">
+<meta property="og:title" content="用 vue + d3 画一棵树">
+<meta property="og:url" content="https://reclay.github.io/vue-d3/index.html">
 <meta property="og:site_name" content="clay">
-<meta property="og:description" content="乱码index.js  
-const shell = require(&amp;apos;shelljs&amp;apos;);
+<meta property="og:description" content="结果预览github pages
+vue 和 d3 的角色画图可分为两步：
 
-shell.exec(&amp;apos;aaa&amp;apos;, function (code, stdout, stderr) {
-});
-执行 node index 出现乱码  
+元素坐标计算
+数据绑定
 
-先执行chcp 65001即可
-
-路径在当前目录执行不能加./(powershell下执行需要加)，下面这个">
-<meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/5/24/163924296a231e49?w=334&h=52&f=png&s=4210">
-<meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/5/24/16392447c1f45729?w=469&h=99&f=png&s=7194">
-<meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/5/24/1639246787b6a1f7?w=427&h=79&f=png&s=6041">
-<meta property="og:updated_time" content="2019-02-24T12:30:08.870Z">
+坐标计算只需要一些 api，本文使用 d3。数据绑定既可以借助 d3，也可以使用 vue。d3 通过操作 dom 实现，有点像 jQuery，d3 针对数据和 dom 的状态提出了三个概念：Update、Enter、Exit，感兴趣的可以看官网。本文使用 vue 做数据绑定  
+总结：使用 d3">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/12/2/1676dfd25cc8e5bf?w=977&h=518&f=png&s=13108">
+<meta property="og:updated_time" content="2019-02-24T12:45:15.657Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="node 执行 bat 命令：乱码、路径问题">
-<meta name="twitter:description" content="乱码index.js  
-const shell = require(&amp;apos;shelljs&amp;apos;);
+<meta name="twitter:title" content="用 vue + d3 画一棵树">
+<meta name="twitter:description" content="结果预览github pages
+vue 和 d3 的角色画图可分为两步：
 
-shell.exec(&amp;apos;aaa&amp;apos;, function (code, stdout, stderr) {
-});
-执行 node index 出现乱码  
+元素坐标计算
+数据绑定
 
-先执行chcp 65001即可
-
-路径在当前目录执行不能加./(powershell下执行需要加)，下面这个">
-<meta name="twitter:image" content="https://user-gold-cdn.xitu.io/2018/5/24/163924296a231e49?w=334&h=52&f=png&s=4210">
+坐标计算只需要一些 api，本文使用 d3。数据绑定既可以借助 d3，也可以使用 vue。d3 通过操作 dom 实现，有点像 jQuery，d3 针对数据和 dom 的状态提出了三个概念：Update、Enter、Exit，感兴趣的可以看官网。本文使用 vue 做数据绑定  
+总结：使用 d3">
+<meta name="twitter:image" content="https://user-gold-cdn.xitu.io/2018/12/2/1676dfd25cc8e5bf?w=977&h=518&f=png&s=13108">
 
 
 
@@ -155,13 +147,13 @@ shell.exec(&amp;apos;aaa&amp;apos;, function (code, stdout, stderr) {
 
 
 
-  <link rel="canonical" href="https://reclay.github.io/node-messy-code/"/>
+  <link rel="canonical" href="https://reclay.github.io/vue-d3/"/>
 
 
 
 
 
-  <title> node 执行 bat 命令：乱码、路径问题 | clay </title>
+  <title> 用 vue + d3 画一棵树 | clay </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -322,7 +314,7 @@ shell.exec(&amp;apos;aaa&amp;apos;, function (code, stdout, stderr) {
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="https://reclay.github.io/node-messy-code/">
+    <link itemprop="mainEntityOfPage" href="https://reclay.github.io/vue-d3/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="clay">
@@ -343,7 +335,7 @@ shell.exec(&amp;apos;aaa&amp;apos;, function (code, stdout, stderr) {
             
             
               
-                node 执行 bat 命令：乱码、路径问题
+                用 vue + d3 画一棵树
               
             
           </h2>
@@ -358,8 +350,8 @@ shell.exec(&amp;apos;aaa&amp;apos;, function (code, stdout, stderr) {
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-24T21:22:06+08:00">
-                2018-05-24
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-02T16:18:57+08:00">
+                2018-12-02
               </time>
             
 
@@ -377,8 +369,8 @@ shell.exec(&amp;apos;aaa&amp;apos;, function (code, stdout, stderr) {
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/node-messy-code/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="node-messy-code/" itemprop="commentCount"></span>
+                <a href="/vue-d3/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="vue-d3/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -399,7 +391,7 @@ shell.exec(&amp;apos;aaa&amp;apos;, function (code, stdout, stderr) {
                     <span class="post-meta-item-text">字数统计</span>
                   
                     <span title="字数统计" }}">
-                      92字
+                      451字
                     </span>
               
 
@@ -415,7 +407,7 @@ shell.exec(&amp;apos;aaa&amp;apos;, function (code, stdout, stderr) {
                     <span class="post-meta-item-text">阅读时长</span>
                   
                     <span title="阅读时长" }}">
-                      1分钟
+                      2分钟
                     </span>
 
               
@@ -435,20 +427,31 @@ shell.exec(&amp;apos;aaa&amp;apos;, function (code, stdout, stderr) {
       
 
       
-        <h3 id="乱码"><a href="#乱码" class="headerlink" title="乱码"></a>乱码</h3><p>index.js  </p>
-<pre><code>const shell = require(&apos;shelljs&apos;);
-
-shell.exec(&apos;aaa&apos;, function (code, stdout, stderr) {
-});
-</code></pre><p>执行 node index 出现乱码  </p>
-<p><img src="https://user-gold-cdn.xitu.io/2018/5/24/163924296a231e49?w=334&amp;h=52&amp;f=png&amp;s=4210" alt=""></p>
-<p>先执行<code>chcp 65001</code>即可</p>
-<p><img src="https://user-gold-cdn.xitu.io/2018/5/24/16392447c1f45729?w=469&amp;h=99&amp;f=png&amp;s=7194" alt=""></p>
-<h3 id="路径"><a href="#路径" class="headerlink" title="路径"></a>路径</h3><p>在当前目录执行不能加<code>./</code>(powershell下执行需要加)，下面这个会报错  </p>
-<pre><code>shell.exec(&apos;./test&apos;, function (code, stdout, stderr) {
-});
-</code></pre><p><img src="https://user-gold-cdn.xitu.io/2018/5/24/1639246787b6a1f7?w=427&amp;h=79&amp;f=png&amp;s=6041" alt=""></p>
-<p>这个报错似乎很友好，但和乱码同时出现就很懵了。纪念我的半个下午</p>
+        <h2 id="结果预览"><a href="#结果预览" class="headerlink" title="结果预览"></a>结果预览</h2><p><a href="https://reclay.github.io/vue-d3-tree-example/">github pages</a><br><img src="https://user-gold-cdn.xitu.io/2018/12/2/1676dfd25cc8e5bf?w=977&amp;h=518&amp;f=png&amp;s=13108" alt=""></p>
+<h2 id="vue-和-d3-的角色"><a href="#vue-和-d3-的角色" class="headerlink" title="vue 和 d3 的角色"></a>vue 和 d3 的角色</h2><p>画图可分为两步：</p>
+<ol>
+<li>元素坐标计算</li>
+<li>数据绑定</li>
+</ol>
+<p>坐标计算只需要一些 api，本文使用 d3。<br>数据绑定既可以借助 d3，也可以使用 vue。d3 通过操作 dom 实现，有点像 jQuery，d3 针对数据和 dom 的状态提出了三个概念：Update、Enter、Exit，感兴趣的可以看官网。本文使用 vue 做数据绑定  </p>
+<p>总结：使用 d3 提供的 api 计算元素坐标，使用 vue 进行数据绑定</p>
+<h2 id="坐标计算"><a href="#坐标计算" class="headerlink" title="坐标计算"></a>坐标计算</h2><p>一棵树由节点和连接构成，只需要计算出这两种元素的坐标即可  </p>
+<p>画一棵树常见的有两种数据结构，一种是嵌套的，一种是扁平的。如下：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 嵌套的</span></div><div class="line"><span class="keyword">var</span> treeData = &#123;</div><div class="line">    <span class="attr">name</span>: <span class="string">'中国'</span>,</div><div class="line">    <span class="attr">children</span>: [&#123;</div><div class="line">        <span class="attr">name</span>: <span class="string">'北京'</span>,</div><div class="line">        <span class="attr">children</span>: [&#123;</div><div class="line">            <span class="attr">name</span>: <span class="string">'海淀'</span></div><div class="line">        &#125;, &#123;</div><div class="line">            <span class="attr">name</span>: <span class="string">'朝阳'</span></div><div class="line">        &#125;]</div><div class="line">    &#125;, &#123;</div><div class="line">        <span class="attr">name</span>: <span class="string">'上海'</span></div><div class="line">    &#125;]</div><div class="line">&#125;;</div><div class="line"><span class="comment">// 扁平的</span></div><div class="line"><span class="keyword">var</span> flattenData = [&#123;</div><div class="line">    <span class="attr">name</span>: <span class="string">'中国'</span>,</div><div class="line">    <span class="attr">parent</span>: <span class="string">''</span></div><div class="line">&#125;, &#123;</div><div class="line">    <span class="attr">name</span>: <span class="string">'北京'</span>,</div><div class="line">    <span class="attr">parent</span>: <span class="string">'中国'</span></div><div class="line">&#125;, &#123;</div><div class="line">    <span class="attr">name</span>: <span class="string">'上海'</span>,</div><div class="line">    <span class="attr">parent</span>: <span class="string">'中国'</span></div><div class="line">&#125;, &#123;</div><div class="line">    <span class="attr">name</span>: <span class="string">'海淀'</span>,</div><div class="line">    <span class="attr">parent</span>: <span class="string">'北京'</span></div><div class="line">&#125;, &#123;</div><div class="line">    <span class="attr">name</span>: <span class="string">'朝阳'</span>,</div><div class="line">    <span class="attr">parent</span>: <span class="string">'北京'</span></div><div class="line">&#125;]</div></pre></td></tr></table></figure>
+<p>对于嵌套的数据，使用 d3.hierarchy() 计算坐标，对于扁平的，使用 d3.stratify()。得到的结构如下(列举根节点)：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> hierarchyNode = &#123;</div><div class="line">    <span class="attr">depth</span>: <span class="number">0</span></div><div class="line">    height: <span class="number">2</span></div><div class="line">    parent: <span class="literal">null</span></div><div class="line">    x: <span class="number">60</span></div><div class="line">    y: <span class="number">0</span>,</div><div class="line">    <span class="attr">data</span>: &#123;</div><div class="line">       <span class="attr">name</span>: <span class="string">"中国"</span>，</div><div class="line">       children: [] </div><div class="line">    &#125;,</div><div class="line">    <span class="attr">children</span>: []</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
+<p>得到根节点后使用 descendants() 获取所有节点信息，links() 获取所有连接信息。节点的结构如上述，连接结构如下：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> link = &#123;</div><div class="line">    <span class="attr">source</span>: Node,</div><div class="line">    <span class="attr">target</span>: Node</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>至此，已获取到所有元素的坐标</p>
+<h2 id="数据绑定"><a href="#数据绑定" class="headerlink" title="数据绑定"></a>数据绑定</h2><p>使用 svg  </p>
+<p>树的节点就是 rect + text，如下：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">g</span> <span class="attr">:transform</span>=<span class="string">"rootTransform"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">rect</span> <span class="attr">:width</span>=<span class="string">"nodeWidth"</span> <span class="attr">:height</span>=<span class="string">"nodeHeight"</span> <span class="attr">:fill</span>=<span class="string">"nodeFill"</span>&gt;</span><span class="tag">&lt;/<span class="name">rect</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">text</span> <span class="attr">:fill</span>=<span class="string">"nodeTextColor"</span> <span class="attr">text-anchor</span>=<span class="string">"middle"</span> <span class="attr">dominant-baseline</span>=<span class="string">"middle"</span></span></div><div class="line">        <span class="attr">:y</span>=<span class="string">"nodeHeight / 2"</span> <span class="attr">:x</span>=<span class="string">"nodeWidth / 2"</span>&gt;&#123;&#123;node.data.name&#125;&#125;<span class="tag">&lt;/<span class="name">text</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">g</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>连接就是 path，如下：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">g</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">path</span> <span class="attr">:d</span>=<span class="string">"getLinkPath(link)"</span> <span class="attr">:stroke</span>=<span class="string">"linkStroke"</span> <span class="attr">fill</span>=<span class="string">"none"</span> <span class="attr">:stroke-width</span>=<span class="string">"linkStrokeWidth"</span>&gt;</span><span class="tag">&lt;/<span class="name">path</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">g</span>&gt;</span></div></pre></td></tr></table></figure>
+<h2 id="code"><a href="#code" class="headerlink" title="code"></a>code</h2><blockquote>
+<p>talk is cheap show me the code</p>
+</blockquote>
+<p><a href="https://github.com/reclay/vue-d3-tree-example" target="_blank" rel="external">github/vue-d3-tree-example</a></p>
 
       
     </div>
@@ -472,7 +475,11 @@ shell.exec(&apos;aaa&apos;, function (code, stdout, stderr) {
       
         <div class="post-tags">
           
-            <a href="/tags/node/" rel="tag"># node</a>
+            <a href="/tags/js/" rel="tag"># js</a>
+          
+            <a href="/tags/vue/" rel="tag"># vue</a>
+          
+            <a href="/tags/d3/" rel="tag"># d3</a>
           
         </div>
       
@@ -485,8 +492,8 @@ shell.exec(&apos;aaa&apos;, function (code, stdout, stderr) {
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/see-js-from-use-strict-arguments/" rel="next" title="从use strict看JS（二）：函数传参模式与arguments">
-                <i class="fa fa-chevron-left"></i> 从use strict看JS（二）：函数传参模式与arguments
+              <a href="/vue-loop/" rel="next" title="熟悉 Vue ？你能解释这个死循环吗？">
+                <i class="fa fa-chevron-left"></i> 熟悉 Vue ？你能解释这个死循环吗？
               </a>
             
           </div>
@@ -495,8 +502,8 @@ shell.exec(&apos;aaa&apos;, function (code, stdout, stderr) {
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/crawler-puppeteer/" rel="prev" title="用 puppeteer 获取 jd 商品评论">
-                用 puppeteer 获取 jd 商品评论 <i class="fa fa-chevron-right"></i>
+              <a href="/vue-source-code/" rel="prev" title="Vue 源码(一)：响应式原理">
+                Vue 源码(一)：响应式原理 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -641,7 +648,7 @@ shell.exec(&apos;aaa&apos;, function (code, stdout, stderr) {
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#乱码"><span class="nav-number">1.</span> <span class="nav-text">乱码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#路径"><span class="nav-number">2.</span> <span class="nav-text">路径</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#结果预览"><span class="nav-number">1.</span> <span class="nav-text">结果预览</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#vue-和-d3-的角色"><span class="nav-number">2.</span> <span class="nav-text">vue 和 d3 的角色</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#坐标计算"><span class="nav-number">3.</span> <span class="nav-text">坐标计算</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据绑定"><span class="nav-number">4.</span> <span class="nav-text">数据绑定</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#code"><span class="nav-number">5.</span> <span class="nav-text">code</span></a></li></ol></div>
             
 
           </div>
@@ -761,9 +768,9 @@ shell.exec(&apos;aaa&apos;, function (code, stdout, stderr) {
 
     <script type="text/javascript">
       var disqus_shortname = 'reclay';
-      var disqus_identifier = 'node-messy-code/';
+      var disqus_identifier = 'vue-d3/';
 
-      var disqus_title = "node 执行 bat 命令：乱码、路径问题";
+      var disqus_title = "用 vue + d3 画一棵树";
 
 
       function run_disqus_script(disqus_script) {
